@@ -19,44 +19,44 @@ const types = {
 };
 
 const constants = {
-    actualKwPrice: 0.11,
+    actualKwPrice: 0.16,
     co2EmissionsFactor: 0.27,
     savings: {
         simple: {
             indoor: {
-                metalizado: 216,
-                tintado: 153.09,
-                ir: 159.28
+                metalizado: 216.03,
+                tintado: 165.19,
+                ir: 119.46
             },        
             outdoor: {
                 metalizado: 246.91,
-                tintado: 141.82,
-                ir: 137.91
+                tintado: 190.53,
+                ir: 115
             }
         },
         double: {
             indoor: {
-                metalizado: 123.75,
-                tintado: 75.11,
-                ir: 70.73
+                metalizado: 123.96,
+                tintado: 77.53,
+                ir: 53.04
             },        
             outdoor: {
-                metalizado: 222,
-                tintado: 142,
-                ir: 131.3
+                metalizado: 222.57,
+                tintado: 183.06,
+                ir: 134.00
             }
         }
     },
     price: {
         indoor: {
-            metalizado: 45,
-            tintado: 50,
-            ir: 69
+            metalizado: 40,
+            tintado: 40,
+            ir: 50
         },        
         outdoor: {
             metalizado: 56,
             tintado: 60,
-            ir: 85
+            ir: 75
         }
     }
 };
