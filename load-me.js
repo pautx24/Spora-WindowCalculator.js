@@ -113,7 +113,7 @@ const updateResults = () => {
 
     document.querySelector(selectors.results.saving).innerText = nFormat.format(anualSaving.toFixed(2)) + " €/año";
     document.querySelector(selectors.results.roi).innerText = nFormat.format(roi.toFixed(1)) + " años";
-    document.querySelector(selectors.results.co2Reduction).innerText = nFormat.format(co2Reduction.toFixed(0)) + " Kg CO2";
+    document.querySelector(selectors.results.co2Reduction).innerText = nFormat.format(co2Reduction < 1 ? co2Reduction.toFixed(2) : co2Reduction.toFixed(0)) + " Kg CO2";
 }
 
 const onGlassChange = (type) => {
