@@ -110,8 +110,9 @@ const updateResults = () => {
     co2Reduction = saving * surface * constants.co2EmissionsFactor / 1000;
 
     const nFormat = new Intl.NumberFormat();
+    const currencyFormat = new Intl.NumberFormat(undefined, { minimumFractionDigits: 2 });
 
-    document.querySelector(selectors.results.saving).innerText = nFormat.format(anualSaving.toFixed(2)) + " €/año";
+    document.querySelector(selectors.results.saving).innerText = currencyFormat.format(anualSaving.toFixed(2)) + " €/año";
     document.querySelector(selectors.results.roi).innerText = nFormat.format(roi.toFixed(1)) + " años";
     document.querySelector(selectors.results.co2Reduction).innerText = nFormat.format(co2Reduction < 1 ? co2Reduction.toFixed(2) : co2Reduction.toFixed(0)) + " Kg CO2";
 }
