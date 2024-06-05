@@ -107,7 +107,7 @@ const updateResults = () => {
 
     anualSaving = constants.actualKwPrice * saving * surface;
     roi = anualSaving === 0 ? 0 : price * surface / anualSaving;
-    co2Reduction = saving * surface * constants.co2EmissionsFactor / 1000;
+    co2Reduction = saving * surface * constants.co2EmissionsFactor;
 
     const nFormat = new Intl.NumberFormat();
     const currencyFormat = new Intl.NumberFormat(undefined, { minimumFractionDigits: 2 });
